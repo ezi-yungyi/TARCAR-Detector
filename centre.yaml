@@ -6,12 +6,6 @@ area:
     left: -1
     right: 2
 
-mysql:
-  host: server.x01
-  database: tarcar
-  user: root
-  password: Num0-jiyo
-
 capture:
   source: 0
 
