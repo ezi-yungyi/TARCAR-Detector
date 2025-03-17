@@ -1,0 +1,31 @@
+area:
+  camera_id: 1
+  next_camera:
+    top: -1
+    bottom: -1
+    left: -1
+    right: 2
+
+mysql:
+  host: server.x01
+  database: tarcar
+  user: root
+  password: Num0-jiyo
+
+capture:
+  source: 0
+
+detection:
+  model: yolo11n.pt
+  classes: [2, 3, 5, 7]
+
+tracked_vehicle:
+  grace_period: 5
+  stop_distance_threshold: 10
+  parked_threshold: 10
+  iou_threshold: 0.3
+  double_parked_iou_threshold: 0.05
+  touch_line_threshold: 5
+
+zmq:
+  router: tcp://0.0.0.0:5555
